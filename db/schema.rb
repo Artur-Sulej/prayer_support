@@ -21,12 +21,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_21_200927) do
   end
 
   create_table "prayer_receivers", force: :cascade do |t|
-    t.string "first_name"
+    t.string "first_name", null: false
     t.string "city"
-    t.string "email"
-    t.date "end_date"
+    t.string "email", null: false
+    t.date "end_date", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_prayer_receivers_on_email", unique: true
   end
 
 end
