@@ -1,0 +1,20 @@
+pl:
+  global:
+    forms:
+      submit: "Zapisz"
+  activerecord:
+    attributes:
+      prayer_receiver:
+        first_name: "Imię"
+        city: "Miasto"
+        email: "Email"
+        end_date: "Data zakończenia"
+      prayer_giver:
+        first_name: "Imię"
+        city: "Miasto"
+        email: "Email"
+        end_date: "Data zakończenia"
+  title: "Wsparcie modlitewne"
+  need_prayer: "Potrzebuję modlitwy"
+  offer_prayer: "Ofiaruję modlitwę"
+  successful_save: "Twoje dane zostały zapisane."

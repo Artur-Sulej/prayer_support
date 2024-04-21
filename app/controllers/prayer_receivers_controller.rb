@@ -10,7 +10,7 @@ class PrayerReceiversController < ApplicationController
 
     respond_to do |format|
       if @prayer_receiver.save
-        format.html { redirect_to new_prayer_receiver_path, notice: "Prayer receiver was successfully created." }
+        format.html { redirect_to new_prayer_receiver_path, notice: I18n.t("successful_save") }
         format.json { render :show, status: :created, location: @prayer_receiver }
       else
         format.html { render :new, status: :unprocessable_entity }

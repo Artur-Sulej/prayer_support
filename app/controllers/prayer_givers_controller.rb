@@ -10,7 +10,7 @@ class PrayerGiversController < ApplicationController
 
     respond_to do |format|
       if @prayer_giver.save
-        format.html { redirect_to new_prayer_giver_path, notice: "Prayer giver was successfully created." }
+        format.html { redirect_to new_prayer_giver_path, notice: I18n.t("successful_save") }
         format.json { render :show, status: :created, location: @prayer_giver }
       else
         format.html { render :new, status: :unprocessable_entity }

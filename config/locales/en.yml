@@ -28,4 +28,22 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  global:
+    forms:
+      submit: "Submit"
+  activerecord:
+    attributes:
+      prayer_receiver:
+        first_name: "First Name"
+        city: "City"
+        email: "Email"
+        end_date: "End date"
+      prayer_giver:
+        first_name: "First Name"
+        city: "City"
+        email: "Email"
+        end_date: "End date"
+  title: "Prayer Support"
+  need_prayer: "I need prayer support"
+  offer_prayer: "I offer my prayer"
+  successful_save: "Your data was saved."
