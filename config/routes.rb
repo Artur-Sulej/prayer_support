@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :prayer_receivers
   resources :prayer_givers, only: %i[new create]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

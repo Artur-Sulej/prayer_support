@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @prayer_receiver %>
+
+<div>
+  <%= link_to "Edit this prayer receiver", edit_prayer_receiver_path(@prayer_receiver) %> |
+  <%= link_to "Back to prayer receivers", prayer_receivers_path %>
+
+  <%= button_to "Destroy this prayer receiver", @prayer_receiver, method: :delete %>
+</div>
