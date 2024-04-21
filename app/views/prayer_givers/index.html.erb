@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Prayer givers</h1>
+
+<div id="prayer_givers">
+  <% @prayer_givers.each do |prayer_giver| %>
+    <%= render prayer_giver %>
+    <p>
+      <%= link_to "Show this prayer giver", prayer_giver %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New prayer giver", new_prayer_giver_path %>

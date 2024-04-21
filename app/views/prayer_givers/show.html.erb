@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @prayer_giver %>
+
+<div>
+  <%= link_to "Edit this prayer giver", edit_prayer_giver_path(@prayer_giver) %> |
+  <%= link_to "Back to prayer givers", prayer_givers_path %>
+
+  <%= button_to "Destroy this prayer giver", @prayer_giver, method: :delete %>
+</div>
