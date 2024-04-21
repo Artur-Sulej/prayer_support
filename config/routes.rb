@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :prayer_receivers
   resources :prayer_givers, only: %i[new create]
   get "/", to: "start_page#show", as: :start_page
